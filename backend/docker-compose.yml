@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
     restart: always
     ports:
-      - "6700:3000"
+      - "6700:6700"
     env_file:
       - .env
     environment:
