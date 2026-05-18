@@ -1,0 +1,12 @@
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "6600:6600"
+    env_file:
+      - .env
+    environment:
+      - NODE_ENV=production
